@@ -34,12 +34,14 @@ function playRound(buttonSelection) {
 function scoreCounter() {
     if (player_score === 3) {
         computer_score = 0
+        finalScore = computer_score
         player_score  = 0
-        return "Player Wins; 3 vs " + computer_score
+        return "Player Wins; 3 vs " + finalScore
     } else if (computer_score === 3) {
         computer_score = 0
+        finalScore = player_score
         player_score  = 0
-        return "Computer Wins; 3 vs " + player_score
+        return "Computer Wins; 3 vs " + finalScore
     } else {
         return "Player score is " + player_score +  " vs " + " Computer score " + computer_score }
 }
